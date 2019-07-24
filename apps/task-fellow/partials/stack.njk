@@ -1,0 +1,27 @@
+<div 
+  class="stack card"
+  data-o-type="object"
+  data-o-key-name="{{ stack.name }}"
+  data-o-default-name="Default stack name"
+>
+  <div class="stack__header card-header">
+    <button 
+      class="stack__add btn btn-primary float-right"
+      data-i-new="tack .tacks"
+    ><i class="icon icon-plus"></i></button>
+    <div 
+      class="stack__name card-title h5"
+      data-i-editable-with-remove="name(text-single-line)"
+      data-w-key-name="innerText"
+    >{{ stack.name }}</div>
+  </div>
+  <div 
+    class="tacks"
+    data-o-key="tacks"
+    data-o-type="list"
+  >
+    {% for tack in stack.tacks %}
+      {% include "../../partials/tack/index.njk" %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,33 @@
+{% include "../../partials/head/index.njk" %}
+
+<div class="container">
+  <div class="columns">
+    <form id="app" class="column col-3 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4" method="post" action="/signup">
+      <h2>Sign up</h2>
+      <div class="form-group">
+        <label class="form-label" for="username">Username:</label>
+        <input class="form-input" type="text" id="username" name="username">
+      </div>
+      <div class="form-group mb--1point5">
+        <label class="form-label" for="password">Password:</label>
+        <input class="form-input" type="password" id="password" name="password">
+      </div>
+      <button class="btn btn-primary mb--1" type="submit">Sign up</button>
+      <div class="invalid-password-message py-2">Your password must be at least 8 characters</div>
+    </form>
+  </div> 
+</div>
+
+<script src="/dist/index.js"></script>
+
+{% include "../../partials/footer/index.njk" %}
+
+
+
+
+
+
+
+
+
+
