@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{title}}</title>
+  {% if title %}
+    <title>{{ title }}</title>
+  {% else %}
+    <title>Remake Apps</title>
+  {% endif %}
   <link rel="stylesheet" href="/css/spectre.css">
   <link rel="stylesheet" href="/css/spectre-icons.css">
   <link rel="stylesheet" href="/css/util.css">
