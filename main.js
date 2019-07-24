@@ -16,7 +16,6 @@ const fs = require('fs');
 const path = require('path');
 const readFile = util.promisify(fs.readFile);
 
-
 // The local strategy require a `verify` function which receives the credentials
 passport.use(new LocalStrategy(async function(username, password, cb) {
   try {
@@ -118,10 +117,9 @@ app.post('/signup', async function(req, res) {
   let user = insertResult.ops[0];
 
   // attach starting data
-  let startingData = await readFile(path.join(__dirname, "./data/user-starting-data.json"), "utf8");
   let updateResult = await usersCollection.updateOne(
     { "_id" : user._id },
-    { $set: { appData: startingData } }
+    { $set: { appData: {} } }
   );
 
   req.login(user, function (err) {
