@@ -1,0 +1,63 @@
+{% include "../../partials/head/index.njk" %}
+
+{% if user %}
+  <div 
+    id="app"
+    class="p--2"
+    data-o-save-deep="defaultSave"
+    data-o-type="object"
+  >
+    <div class="pack">
+      <header class="navbar pack__header">
+        <section class="navbar-section">
+          <div 
+            class="pack__name h2"
+
+            data-i-editable="packName(text-single-line)"
+            data-o-type="object"
+            data-o-key-pack-name="{{ data.packName }}"
+            data-w-key-pack-name="innerText"
+          >{{ data.packName }}</div>
+          <button 
+            class="btn btn-primary"
+            data-i-new="stack .stacks"
+          >Add Stack</button>
+        </section>
+      </header>
+      <div 
+        class="stacks"
+        data-o-key="stacks"
+        data-o-type="list"
+      >
+        {% for stack in data.stacks %}
+          {% include "../../partials/stack/index.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div class="columns">
+    <div class="column col-5 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4 text-center">
+      <h1>Welcome to TaskFellow</h1>
+      <h4 class="mb--2 text-primary">Make complex projects simple.</h4>
+      <a class="btn btn-primary btn-lg" href="/signup">Sign up!</a>
+    </div>
+  </div>
+{% endif %}
+
+<script src="/dist/index.js"></script>
+
+{% include "../../partials/footer/index.njk" %}
+
+
+
+
+
+
+
+
+
+
+
+
+

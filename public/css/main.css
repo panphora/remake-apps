@@ -1,0 +1,66 @@
+/* stacks */ 
+
+
+.pack__header {
+  margin-bottom: 2.5rem;
+}
+
+.pack__name {
+  margin-right: 2rem;
+}
+
+.stacks {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.stack {
+  display: inline-block;
+  height: 100%;
+  width: 300px;
+  margin-right: 1rem;
+  white-space: normal;
+  vertical-align: top;
+  font-size: .8rem;
+  box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15)
+}
+
+.stack__header {
+  margin-bottom: .5rem;
+}
+
+.tack {
+  margin: .75rem;
+  padding: 7px 16px 8px;
+  line-height: 1.45em;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tack:hover {
+  background-color: #eff2f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

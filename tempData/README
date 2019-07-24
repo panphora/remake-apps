@@ -1,0 +1,5 @@
+# For debugging purposes
+
+If the flag `writeAppDataToTempFiles` is set to `true`, this directory will be filled with nicely formatted JSON files representing any recently loaded app data.
+
+The JSON files will be named after the owner's username.

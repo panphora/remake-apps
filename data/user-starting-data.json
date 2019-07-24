@@ -1,0 +1,68 @@
+{
+  "packName": "My Projects",
+  "stacks": [
+    {
+      "name": "Learning Piano",
+      "tacks": [
+        {
+          "text": "Scales"
+        },
+        {
+          "text": "Basic chords"
+        },
+        {
+          "text": "Rhythm"
+        }
+      ]
+    },
+    {
+      "name": "Installing air conditioner",
+      "tacks": [
+        {
+          "text": "Go to Home Depot"
+        },
+        {
+          "text": "Talk to Kevin"
+        },
+        {
+          "text": "Ask for a discount because you know his brother"
+        },
+        {
+          "text": "Settle for 5% discount"
+        },
+        {
+          "text": "Accidentally drop air conditioner on foot while trying to load it in the car"
+        },
+        {
+          "text": "Sue Home Depot"
+        },
+        {
+          "text": "Settle for owning a Home Depot franchise location"
+        },
+        {
+          "text": "Hire Kevin"
+        },
+        {
+          "text": "Pay Kevin for dropping the air conditioner and setting the plan in motion"
+        },
+        {
+          "text": "Install air conditioner"
+        }
+      ]
+    },
+    {
+      "name": "Long term",
+      "tacks": [
+        {
+          "text": "Build a rocketship"
+        },
+        {
+          "text": "Go to Mars"
+        },
+        {
+          "text": "Build a habitat for a colony"
+        }
+      ]
+    }
+  ]
+}
