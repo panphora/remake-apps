@@ -7,7 +7,7 @@
     data-o-save-deep="defaultSave"
     data-o-type="object"
   >
-    {% if parentItem %}
+    {% if parentItem and parentItem.text %}
       <a class="btn btn-primary mb--2" href="/adventure-story/{{ parentItem.id }}">Back</a>
     {% endif %}
     {% set currentItem = currentItem or data.topLevelStory %}
