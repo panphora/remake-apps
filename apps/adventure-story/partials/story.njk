@@ -1,0 +1,35 @@
+<div 
+  class="story"
+
+  data-o-save-deep="id:{{ currentItem.id }}"
+  data-o-type="object"
+  data-o-key-id="{{ currentItem.id }}"
+  data-o-key-text="{{ currentItem.text }}"
+>
+  <div 
+    class="p--2" 
+    style="background-color: #eee;"
+
+    data-i-editable="text(text-multi-line)"
+    data-w-key-text="innerText"
+  >{{ currentItem.text }}</div>
+  <ul 
+    class="story__choices"
+    data-o-key="choices"
+    data-o-type="list"
+  >
+    {% for choice in currentItem.choices %}
+      {% include "adventure-story/partials/story-choice.njk" %}
+    {% endfor %}
+  </div>
+  <button 
+    class="btn btn-primary" 
+    data-i-new="story-choice .story__choices"
+  >New choice</button>
+</div>
+
+
+
+
+
+

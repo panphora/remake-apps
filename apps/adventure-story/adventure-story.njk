@@ -1,0 +1,32 @@
+{% include "_shared/partials/head.njk" %}
+
+{% if user %}
+  <div 
+    id="app"
+    class="p--2"
+    data-o-save-deep="defaultSave"
+    data-o-type="object"
+  >
+    {% if data.topLevelStory %}
+      {% set currentItem = data.topLevelStory %}
+      {% include "adventure-story/partials/story.njk" %}
+    {% endif %}
+  </div>
+{% else %}
+  <div class="columns">
+    <div class="column col-5 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4 text-center">
+      <h1>Welcome to Adventure Story</h1>
+      <h4 class="mb--2 text-primary">Hello player... Do you want to play a game?</h4>
+      <a class="btn btn-primary btn-lg" href="/signup">Sign up!</a>
+    </div>
+  </div>
+{% endif %}
+
+{% include "_shared/partials/footer.njk" %}
+
+
+
+
+
+
+

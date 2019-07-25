@@ -1,4 +1,19 @@
 {
+  "adventureStory": {
+    "topLevelStory": {
+      "text": "There’s a dark cave. Do you go inside to explore or run away?",
+      "choices": [
+        {
+          "choiceText": "Go inside",
+          "text": "You went into the dark cave. A bear ate you. You died."
+        },
+        {
+          "choiceText": "Run away",
+          "text": "You ran away and lived happily ever after"
+        }
+      ]
+    }
+  },
   "taskFellow": {
     "packName": "My Projects",
     "stacks": [

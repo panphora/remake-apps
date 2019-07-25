@@ -64,6 +64,14 @@
   margin-bottom: 7rem;
 }
 
+.mb--7point5, #app .mb--7point5 {
+  margin-bottom: 7.5rem;
+}
+
+.mb--8, #app .mb--8 {
+  margin-bottom: 8rem;
+}
+
 .p--point5 {
   padding: .5rem;
 }
