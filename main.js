@@ -121,11 +121,17 @@ app.post('/signup', async function(req, res) {
   let startingData;
   try {
     startingData = await jsonfile.readFile(path.join(__dirname, "./data/user-starting-data.json"));
+    
     // top-level keys are app namespaces - they should be regular object keys; however, the nested data should be stringified
     Object.keys(startingData).forEach(k => {
       startingData["appData." + k] = JSON.stringify(startingData[k]);
       delete startingData[k];
     });
+
+    // create default app namespace
+    if (!startingData["appData.default"]) {
+      startingData["appData.default"] = "{}";
+    }
   } catch (e) {
     startingData = {};
   }
