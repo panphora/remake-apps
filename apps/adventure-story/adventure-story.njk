@@ -8,7 +8,7 @@
     data-o-type="object"
   >
     {% if data.topLevelStory %}
-      {% set currentItem = data.topLevelStory %}
+      {% set currentItem = currentItem or data.topLevelStory %}
       {% include "adventure-story/partials/story.njk" %}
     {% endif %}
   </div>

@@ -1,10 +1,16 @@
-<li>
+<li
+  data-o-type="object"
+  data-o-key-id="{{ choice.id }}"
+  data-o-key-choice-text="{{ choice.choiceText }}"
+>
   <a 
-    class="block" 
-    href="/story/{{ choice.id }}"
-
-    data-o-type="object"
-    data-o-key-id="{{ choice.id }}"
-    data-o-key-choice-text="{{ choice.choiceText }}"
+    href="/adventure-story/{{ choice.id }}"
+    data-w-key-choice-text="innerText"
   >{{ choice.choiceText }}</a>
+  {% if user %}
+    <button 
+      class="btn btn-sm"
+      data-i-editable-with-remove="choiceText(text-single-line)"
+    >Edit</button>
+  {% endif %}
 </li>
