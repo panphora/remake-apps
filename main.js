@@ -10,6 +10,7 @@ const ObjectID = require('mongodb').ObjectID;
 const bcrypt = require('bcrypt');
 const flash = require('connect-flash');
 const MongoStore = require('connect-mongo')(expressSession);
+const jsonfile = require("jsonfile");
 // todo: move these 
 const util = require('util');
 const fs = require('fs');
@@ -117,9 +118,21 @@ app.post('/signup', async function(req, res) {
   let user = insertResult.ops[0];
 
   // attach starting data
+  let startingData;
+  try {
+    startingData = await jsonfile.readFile(path.join(__dirname, "./data/user-starting-data.json"));
+    // top-level keys are app namespaces - they should be regular object keys; however, the nested data should be stringified
+    Object.keys(startingData).forEach(k => {
+      startingData["appData." + k] = JSON.stringify(startingData[k]);
+      delete startingData[k];
+    });
+  } catch (e) {
+    startingData = {};
+  }
+
   let updateResult = await usersCollection.updateOne(
     { "_id" : user._id },
-    { $set: { appData: {} } }
+    { $set: startingData }
   );
 
   req.login(user, function (err) {
