@@ -7,10 +7,11 @@
     data-o-save-deep="defaultSave"
     data-o-type="object"
   >
-    {% if data.topLevelStory %}
-      {% set currentItem = currentItem or data.topLevelStory %}
-      {% include "adventure-story/partials/story.njk" %}
+    {% if parentItem %}
+      <a class="btn btn-primary mb--2" href="/adventure-story/{{ parentItem.id }}">Back</a>
     {% endif %}
+    {% set currentItem = currentItem or data.topLevelStory %}
+    {% include "adventure-story/partials/story.njk" %}
   </div>
 {% else %}
   <div class="columns">
