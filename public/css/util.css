@@ -8,6 +8,22 @@
 
 /* spacing */
 
+.mt--point5, #app .mt--point5 {
+  margin-top: .5rem;
+}
+
+.mt--1, #app .mt--1 {
+  margin-top: 1rem;
+}
+
+.mt--1point5, #app .mt--1point5 {
+  margin-top: 1.5rem;
+}
+
+.mt--2, #app .mt--2 {
+  margin-top: 2rem;
+}
+
 .mb--point5, #app .mb--point5 {
   margin-bottom: .5rem;
 }

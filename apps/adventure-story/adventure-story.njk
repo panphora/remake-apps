@@ -1,32 +1,34 @@
 {% set title = "Adventure Story" %}
 {% include "_shared/partials/head.njk" %}
 
-{% if user %}
-  <div 
-    id="app"
-    class="p--2 columns"
-    data-o-save-deep="defaultSave"
-    data-o-type="object"
-  >
-    <div class="column col-5 col-sm-12 col-mx-auto">
-      {% if parentItem and parentItem.text %}
-        <a class="btn btn-primary mb--2" href="/adventure-story/{{ parentItem.id }}">Back</a>
-      {% else %}
-        <h3 class="mb--2">The beginning of your story...</h3>
-      {% endif %}
-      {% set currentItem = currentItem or data.topLevelStory %}
-      {% include "adventure-story/partials/story.njk" %}
+<div class="container">
+  {% if user %}
+    <div 
+      id="app"
+      class="p--2 columns"
+      data-o-save-deep="defaultSave"
+      data-o-type="object"
+    >
+      <div class="column col-5 col-sm-12 col-mx-auto mt--2">
+        {% if parentItem and parentItem.text %}
+          <a class="btn btn-primary mb--2" href="/adventure-story/{{ parentItem.id }}">Back</a>
+        {% else %}
+          <h3 class="mb--2">The beginning of your story...</h3>
+        {% endif %}
+        {% set currentItem = currentItem or data.topLevelStory %}
+        {% include "adventure-story/partials/story.njk" %}
+      </div>
     </div>
-  </div>
-{% else %}
-  <div class="columns">
-    <div class="column col-5 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4 text-center">
-      <h1>Welcome to Adventure Story</h1>
-      <h4 class="mb--2 text-primary">Hello player... Do you want to play a game?</h4>
-      <a class="btn btn-primary btn-lg" href="/signup">Sign up!</a>
+  {% else %}
+    <div class="columns">
+      <div class="column col-5 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4 text-center">
+        <h1>Welcome to Adventure Story</h1>
+        <h4 class="mb--2 text-primary">Hello player... Do you want to play a game?</h4>
+        <a class="btn btn-primary btn-lg" href="/signup">Sign up!</a>
+      </div>
     </div>
-  </div>
-{% endif %}
+  {% endif %}
+</div>
 
 {% include "_shared/partials/footer.njk" %}
 
