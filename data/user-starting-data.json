@@ -1,15 +1,209 @@
 {
   "adventureStory": {
     "topLevelStory": {
-      "text": "There’s a dark cave. Do you go inside to explore or run away?",
+      "text": "Your name is Rio. Your village, which you love, is going to be under attack by invaders within two hours. \n\nThere's a nearby cave that's said to hold unimaginable wonders, including a crystal that can dissolve conflict and bring peace to any land.\n\nNobody who has entered the cave in the past 100 years has come out alive.\n\nWhat do you do?",
       "choices": [
         {
-          "choiceText": "Go inside",
-          "text": "You went into the dark cave. A bear ate you. You died."
+          "choiceText": "Go off in search of the cave",
+          "text": "After a lot of searching, you come to a clearing in the woods. In front of you in a giant, beautiful cave. There are crystals embedded into the entrance.\n\nFrom deep in the cave, you hear an echoing howl.",
+          "choices": [
+            {
+              "choiceText": "Run away, back to the village",
+              "text": "You get back to the village while everyone is still preparing.\n\nYour best friend, Rachel, asks, \"Where have you been Rio? Everyone was worried about you.\"",
+              "choices": [
+                {
+                  "choiceText": "Stay with Rachel until the battle begins",
+                  "text": "You talk with Rachel for hours, confiding in each other your deepest secrets, until the battle begins.\n\nThe invaders kill everyone.",
+                  "choices": []
+                },
+                {
+                  "choiceText": "Start preparing for a fight",
+                  "text": "You helped prepare, but in vain.\n\nThe invaders were too strong for your small village. Everything lies in ruin.",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "choiceText": "Collect the crystals",
+              "text": "You collect as many crystals as you can. There must be hundreds, but you can only fit a few dozen into your shirt.\n\nYou've seen this type of crystal before, in town. They sell for $1,000 in gold each.",
+              "choices": [
+                {
+                  "choiceText": "Travel to the nearby town to sell the crystals",
+                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the crystals behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
+                  "choices": []
+                },
+                {
+                  "choiceText": "Bring the crystals back to the village",
+                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the crystals behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "choiceText": "Enter the cave",
+              "text": "You enter the cave cautiously and peak around the first corner. It's dark, but you can see there's another passageway up ahead.\n\nWhat do you do?",
+              "choices": [
+                {
+                  "choiceText": "Run through the darkness headlong into the next room",
+                  "text": "There's a giant wolf that bites your head off.",
+                  "choices": []
+                },
+                {
+                  "choiceText": "Enter the next room slowly and quietly",
+                  "text": "You enter the next passageway and hear a low growl in the distance. When you look around the corner, you think you can see the outline of a giant wolf monster.\n\nIt's pacing the room impatiently, but not looking in your direction.",
+                  "choices": [
+                    {
+                      "choiceText": "Look around for a tool or weapon",
+                      "text": "You search the passageway you're in for something, using your hands to help you see in the dark.\n\nIt's hard to maneuver, but eventually you find a sharp rock. There are no other tools or weapons.",
+                      "choices": [
+                        {
+                          "choiceText": "Stab the wolf with the rock",
+                          "text": "You manage to jump up, lunge at the wolf's head, and stab it in the neck.\n\nIt's mortally wounded.\n\nYou turn to run and barely make it to the next passageway when you feel a sharp claw on your leg.\n\nThe wolf pulls you back into the room and slowly eats you as it dies.",
+                          "choices": []
+                        },
+                        {
+                          "choiceText": "Throw the rock into the far corner of the room as a distraction",
+                          "text": "The wolf dives at the loud sound, as you scurry behind it and just barely make it into the next passageway before it turns around.\n\nIt sniffs the air a couple times, but doesn't find you.\n\nYou hear someone softly crying in a nearby room.",
+                          "choices": [
+                            {
+                              "choiceText": "Say, \"Hello?\"",
+                              "text": "The wolf hears you around the corner and comes to investigate.\n\nIt eats you.",
+                              "choices": []
+                            },
+                            {
+                              "choiceText": "Slowly crawl towards the sound",
+                              "text": "You see what looks like the faint outline of a fellow adventurer. They have what looks like battle armor, a sword, and a shield strapped to their back.\n\nAs you approach, they look up, with tears in their eyes. \n\nThey're one of the most beautiful people you've ever seen.\n\nYou ask what's wrong and they say, \"I broke my leg, so I can't make it back to my ship. If you help me, I will reward you with riches beyond your wildest dreams.\"",
+                              "choices": [
+                                {
+                                  "choiceText": "Ask them, \"If I take you to your ship, will you help me save my village?\"",
+                                  "text": "They reply: \"Are you kidding me, I would never help scum like you. I'm wounded and you owe your country the debt of helping me. I rule over the nearby Jerask Isle. Help me now or you'll regret it!\"",
+                                  "choices": [
+                                    {
+                                      "choiceText": "Take their sword and continue into the cave",
+                                      "text": "They struggle against you, but eventually relinquish the sword.\n\nAs you're leaving the room, they throw their shield at you in an attempt to wound you, but it just glances off the ground.\n\nYou then pick it up and say, \"Thanks!\"\n\nA hard wind rushes by you as you enter the next room.\n\nAs you look around the corner, you see a platform nearly 20 feet away, with a giant, infinite abyss between you and it.",
+                                      "choices": [
+                                        {
+                                          "choiceText": "Trust in the magic of willpower, and throw everything you have into jumping across the abyss",
+                                          "text": "You are able to jump 10 feet towards the platform, but fall far short of your goal.\n\nYou fall for an eternity, eventually starving to death in mid-air as you fall.",
+                                          "choices": []
+                                        },
+                                        {
+                                          "choiceText": "Try to find another way across the abyss",
+                                          "text": "You look high and low for another passage. There's nothing you can see.\n\nThen, suddenly, you hear the flapping of wings. A giant bird comes out of the shadows and lands on the platform before you. It looks very angry and very hungry.",
+                                          "choices": [
+                                            {
+                                              "choiceText": "Fight the bird",
+                                              "text": "The bird eats you.",
+                                              "choices": []
+                                            },
+                                            {
+                                              "choiceText": "Feed the bird a piece of bread",
+                                              "text": "The bird greedily eats the bread and lets you pet it.\n\nWhen it turns to fly away, you see a large rope hanging from its ankle. You're not sure if it's attached securely to the bird or not.",
+                                              "choices": [
+                                                {
+                                                  "choiceText": "Risk it all: grab onto the rope and hope for the best",
+                                                  "text": "As the giant bird leaps off of the platform, you scramble for the rope and catch it just in time.\n\nThe bird screeches, trying to shake you free, but eventually lands on the opposite platform, setting you down just on the edge.\n\nIt tries to attack you, but you scurry into the passageway just in time to avoid its talons.",
+                                                  "choices": [
+                                                    {
+                                                      "choiceText": "Continue down the passageway",
+                                                      "text": "After a long walk, you come to a giant room that looks bigger than anything you've ever seen.\n\nAt the back of the room, is a glowing crystal. You think this is the crystal that can help resolve all conflict and bring peace and goodwill to all beings.\n\nIn front of it, is a giant, ugly monster, will teeth the size of your body.\n\nThe monster is looking straight at you.",
+                                                      "choices": [
+                                                        {
+                                                          "choiceText": "Charge at the monster with your sword and shield raised",
+                                                          "text": "\"Whoa there, little fella! I see you come to claim the crystal,\" says the giant, ugly monster.\n\n\"I don't have any use for it any more. It's taught me all I need. Please, take it back to where you came from and use it for good.\"",
+                                                          "choices": [
+                                                            {
+                                                              "choiceText": "Stab the monster",
+                                                              "text": "The monster screams in pain and collapses in a giant heap.\n\nEven as he's dying, he tries to avoid falling on your and crushing you, but he can't control his fall.\n\nHe crushes you and you both die together.",
+                                                              "choices": []
+                                                            },
+                                                            {
+                                                              "choiceText": "Take the crystal",
+                                                              "text": "You take the crystal and make your way back out of the cavern.\n\nThe bird is happy to let you hang on to its rope as you travel back across the abyss.\n\nThe fellow adventurer apologizes for their rude behavior and asks to come back to your village with you.\n\nThe giant wolf monster is transformed back into the human they originally were and agrees to fight off the invaders with you.\n\nYou start heading back to town with the bird, the wolf-man, and the adventurer.",
+                                                              "choices": [
+                                                                {
+                                                                  "choiceText": "Go to town",
+                                                                  "text": "On your way back to town, you meet a traveling merchant. They offer to buy the crystal for $1,000,000 in gold.\n\nWith that much money, you could buy a ship, sail to nearby island, and live with your new friends forever in complete comfort and safety.",
+                                                                  "choices": [
+                                                                    {
+                                                                      "choiceText": "Agree to sell the crystal",
+                                                                      "text": "You sell the crystal for the promised price.\n\nYou live happily on your island with your new friends, but everyone you used to know from your village is killed by the invaders.",
+                                                                      "choices": []
+                                                                    },
+                                                                    {
+                                                                      "choiceText": "Refuse to sell, continue to your village",
+                                                                      "text": "You arrive back to your village just in time. Your best friend Rachel comes up to you, crying, as you arrive, asking where you've been.\n\nYou show her the crystal and her tears immediately dry.\n\nYou want to the front of the battle lines, across the battle field, and show the crystal to the invader commanders. They ask you to come to their tent to discuss peace talks.\n\nThey decide against doing battle with your village, but since they're in the neighborhood, they decide to help build some new houses and cultivate the farmland.\n\nYou use the crystal to spread happiness, prosperity, and peace all over the countryside.",
+                                                                      "choices": []
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "choiceText": "Head back to the giant bird to see if you can cajole it into flying you across this room",
+                                                          "text": "The giant bird swipes at you and mortally wounds you.\n\nYou die of blood loss at the edge of the abyss.",
+                                                          "choices": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "choiceText": "Try to find another way across the abyss",
+                                                  "text": "You wait for several hours. Nothing else appears and you find no other passageways. You slowly die of boredom.",
+                                                  "choices": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "choiceText": "Help them to their ship",
+                                      "text": "They reward you with a big bag of gold.\n\nYour village was destroyed, but you have enough money to go anywhere in the world you want.",
+                                      "choices": []
+                                    },
+                                    {
+                                      "choiceText": "Ignore them and keep going",
+                                      "text": "You tell them to go screw themselves and turn your back.\n\nImmediately, you feel a sharp pain in your leg. They've cut open your Achilles heel.\n\nYou make it to the next room before dying to the hungry shadow creatures that come out of the wall.",
+                                      "choices": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "choiceText": "Help this very attractive stranger to their ship",
+                                  "text": "You help Remy to their ship. They live up to their promise and reward you with a large chest of gold and diamonds.\n\nYour village has long been defeated and everyone was killed, but you get to live a happy life on a nearby island with all the comforts imaginable. ",
+                                  "choices": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "choiceText": "Cast a magic spell on the rock and throw it at the wolf",
+                          "text": "The wolf turns around, surprised, as the rock barely misses its head.\n\nIt devours you as you scream, \"Abracadabra!!\"",
+                          "choices": []
+                        }
+                      ]
+                    },
+                    {
+                      "choiceText": "Attack the wolf with all your strength",
+                      "text": "The wolf bites your head off. You die.",
+                      "choices": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
-          "choiceText": "Run away",
-          "text": "You ran away and lived happily ever after"
+          "choiceText": "Stay and fight the invaders like brave warrior",
+          "text": "You wait around for two hours. The invaders come and kill everyone.",
+          "choices": []
         }
       ]
     }

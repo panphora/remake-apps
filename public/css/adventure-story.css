@@ -4,6 +4,8 @@
 }
 
 .story__text {
+  font-size: 18px;
+  white-space: pre-wrap;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
