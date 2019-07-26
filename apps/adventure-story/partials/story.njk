@@ -7,23 +7,21 @@
   data-o-key-text="{{ currentItem.text }}"
 >
   <div 
-    class="p--2 mb--1" 
-    style="background-color: #eee;"
-
+    class="story__text" 
     data-i-editable="text(text-multi-line)"
     data-w-key-text="innerText"
   >{{ currentItem.text }}</div>
   <ul 
-    class="story__choices mb--2"
+    class="story__choices"
     data-o-key="choices"
     data-o-type="list"
   >
     {% for choice in currentItem.choices %}
       {% include "adventure-story/partials/story-choice.njk" %}
     {% endfor %}
-  </div>
+  </ul>
   <button 
-    class="btn btn-primary" 
+    class="btn" 
     data-i-new="story-choice .story__choices"
   >New choice</button>
 </div>
