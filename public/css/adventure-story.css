@@ -17,6 +17,9 @@
 .story__choice-link {
   display: block;
   text-align: left;
+  white-space: normal;
+  min-height: 1.8rem;
+  height: auto;
 }
 
 .story__choice-edit {
