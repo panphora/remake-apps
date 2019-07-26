@@ -1,3 +1,8 @@
+.story__current-choice {
+  background-color: ;
+  padding: .75rem 2rem;
+}
+
 .story__text {
   padding: 2rem;
   margin-bottom: 2rem;
