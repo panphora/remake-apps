@@ -15,7 +15,11 @@
 <body>
   <header class="navbar bg-primary p--1">
     <section class="navbar-section">
-      <a href="/" class="navbar-brand text-light mr-2">{{ title or "Remake Apps" }}</a>
+      {% if user %}
+        <a href="/{{ user.username }}" class="navbar-brand text-light mr-2">{{ title or "Remake Apps" }}</a>
+      {% else %}
+        <a href="/" class="navbar-brand text-light mr-2">{{ title or "Remake Apps" }}</a>
+      {% endif %}
     </section>
     <section class="navbar-section">
       {% if user %}

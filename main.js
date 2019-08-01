@@ -145,7 +145,7 @@ app.post('/signup', async function(req, res) {
 
   req.login(user, function (err) {
     if (!err){
-      res.redirect('/');
+      res.redirect('/' + user.username);
     } else {
       res.redirect('/login');
     }
@@ -156,12 +156,12 @@ app.post('/login', passport.authenticate('local', {
   failureRedirect: '/login',
   failureFlash: "Invalid username or password"
 }), function(req, res) {
-  res.redirect('/');
+  res.redirect('/' + req.user.username);
 });
 
 app.get('/logout', function(req, res) {
   req.logout();
-  res.redirect('/');
+  res.redirect('/login');
 });
 
 

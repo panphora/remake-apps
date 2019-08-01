@@ -6,7 +6,7 @@
 >
   <a 
     class="story__choice-link btn btn-primary"
-    href="/adventure-story/{{ choice.id }}"
+    href="/{{ user.username }}/adventure-story/{{ choice.id }}"
     data-w-key-choice-text="innerText"
   >{{ choice.choiceText }}</a>
   {% if user %}
