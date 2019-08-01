@@ -16,6 +16,7 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 const readFile = util.promisify(fs.readFile);
+const validUsernameRegex = /^[a-zA-Z0-9_\+\.-]+$/;
 
 // The local strategy require a `verify` function which receives the credentials
 passport.use(new LocalStrategy(async function(username, password, cb) {
@@ -84,20 +85,21 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(flash());
 
-initRenderedRoutes({app});
-initApiRoutes({app});
-
 app.post('/signup', async function(req, res) {
   let username = req.body.username;
   let password = req.body.password;
 
-  if (password.length < 8 || username.length < 1) {
+  if (password.length < 8 || username.length < 1 || !validUsernameRegex.test(username)) {
     if (password.length < 8) {
       req.flash("error", "Your password must be at least 8 characters");
     }
 
     if (username.length < 1) {
       req.flash("error", "Please enter a username");
+    }
+
+    if (!validUsernameRegex.test(username)) {
+      req.flash("error", `Your username can only contain letters, numbers, and certain symbols (i.e. "_", ".", "+")`);
     }
 
     res.redirect('/signup');
@@ -161,6 +163,11 @@ app.get('/logout', function(req, res) {
   req.logout();
   res.redirect('/');
 });
+
+
+initRenderedRoutes({app});
+initApiRoutes({app});
+
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
