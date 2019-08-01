@@ -20,10 +20,12 @@
       {% include "adventure-story/partials/story-choice.njk" %}
     {% endfor %}
   </ul>
-  <button 
-    class="btn" 
-    data-i-new="story-choice .story__choices"
-  >New choice</button>
+  {% if isLoggedIn %}
+    <button 
+      class="btn" 
+      data-i-new="story-choice .story__choices"
+    >New choice</button>
+  {% endif %}
 </div>
 
 

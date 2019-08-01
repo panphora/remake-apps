@@ -5,33 +5,23 @@
 {% set currentItem = currentItem or data.topLevelStory %}
 
 <div class="container">
-  {% if user %}
-    <div 
-      id="app"
-      class="p--2 mb--6 columns"
-      data-o-save-deep="defaultSave"
-      data-o-type="object"
-    >
-      <div class="column col-5 col-sm-12 col-mx-auto mt--2">
-        {% if isTopLevelStory %}
-          <h3 class="mb--2">The beginning of your story...</h3>
-        {% else %}
-          <a class="btn btn-primary mb--2" href="/{{ user.username }}/adventure-story/{{ parentItem.id }}">Back</a>
-          <div class="story__current-choice bg-gray mb--2"><b>Your choice: </b>{{ currentItem.choiceText }}</div>
-        {% endif %}
+  <div 
+    id="app"
+    class="p--2 mb--6 columns"
+    data-o-save-deep="defaultSave"
+    data-o-type="object"
+  >
+    <div class="column col-5 col-sm-12 col-mx-auto mt--2">
+      {% if isTopLevelStory %}
+        <h3 class="mb--2">The beginning of your story...</h3>
+      {% else %}
+        <a class="btn btn-primary mb--2" href="/{{ user.username }}/adventure-story/{{ parentItem.id }}">Back</a>
+        <div class="story__current-choice bg-gray mb--2"><b>Your choice: </b>{{ currentItem.choiceText }}</div>
+      {% endif %}
 
-        {% include "adventure-story/partials/story.njk" %}
-      </div>
+      {% include "adventure-story/partials/story.njk" %}
     </div>
-  {% else %}
-    <div class="columns">
-      <div class="column col-5 col-xl-5 col-lg-8 col-sm-12 col-mx-auto py--4 text-center">
-        <h1>Welcome to Adventure Story</h1>
-        <h4 class="mb--2 text-primary">Hello player... Do you want to play a game?</h4>
-        <a class="btn btn-primary btn-lg" href="/signup">Sign up!</a>
-      </div>
-    </div>
-  {% endif %}
+  </div>
 </div>
 
 {% include "_shared/partials/footer.njk" %}

@@ -9,7 +9,7 @@
     href="/{{ user.username }}/adventure-story/{{ choice.id }}"
     data-w-key-choice-text="innerText"
   >{{ choice.choiceText }}</a>
-  {% if user %}
+  {% if isLoggedIn %}
     <button 
       class="story__choice-edit btn"
       data-i-editable-with-remove="choiceText(text-single-line)"
