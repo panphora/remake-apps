@@ -1,6 +1,5 @@
 {% set title = "Adventure Story" %}
 {% include "_shared/partials/head.njk" %}
-
 {% set currentItem = currentItem or data.topLevelStory %}
 
 <div class="container">
@@ -12,11 +11,11 @@
       data-o-type="object"
     >
       <div class="column col-5 col-sm-12 col-mx-auto mt--2">
-        {% if parentItem and parentItem.text %}
+        {% if parentItem and parentItem.topLevelStory %}
+          <h3 class="mb--2">The beginning of your story...</h3>
+        {% else %}
           <a class="btn btn-primary mb--2" href="/adventure-story/{{ parentItem.id }}">Back</a>
           <div class="story__current-choice bg-gray mb--2"><b>Your choice: </b>{{ currentItem.choiceText }}</div>
-        {% else %}
-          <h3 class="mb--2">The beginning of your story...</h3>
         {% endif %}
 
         {% include "adventure-story/partials/story.njk" %}
