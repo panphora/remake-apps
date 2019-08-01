@@ -5,7 +5,7 @@
       "choices": [
         {
           "choiceText": "Go off in search of the cave",
-          "text": "After a lot of searching, you come to a clearing in the woods. In front of you in a giant, beautiful cave. There are crystals embedded into the entrance.\n\nFrom deep in the cave, you hear an echoing howl.",
+          "text": "After a lot of searching, you come to a clearing in the woods. In front of you is a giant, beautiful cave. There are rubies embedded into the entrance.\n\nFrom deep in the cave, you hear an echoing howl.",
           "choices": [
             {
               "choiceText": "Run away, back to the village",
@@ -24,17 +24,17 @@
               ]
             },
             {
-              "choiceText": "Collect the crystals",
-              "text": "You collect as many crystals as you can. There must be hundreds, but you can only fit a few dozen into your shirt.\n\nYou've seen this type of crystal before, in town. They sell for $1,000 in gold each.",
+              "choiceText": "Collect the rubies",
+              "text": "You collect as many rubies as you can. There must be hundreds, but you can only fit a few dozen into your shirt.\n\nYou've seen this type of rubies before, in town. They sell for $1,000 in gold each.",
               "choices": [
                 {
-                  "choiceText": "Travel to the nearby town to sell the crystals",
-                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the crystals behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
+                  "choiceText": "Travel to the nearby town to sell the rubies",
+                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the rubies behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
                   "choices": []
                 },
                 {
-                  "choiceText": "Bring the crystals back to the village",
-                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the crystals behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
+                  "choiceText": "Bring the rubies back to the village",
+                  "text": "You start getting a rash on your hands. Then they start burning.\n\nYour hands start to melt and you have to leave the rubies behind.\n\nWhen you arrive back at your village, it's already been ransacked and everyone is dead.",
                   "choices": []
                 }
               ]
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "choiceText": "Stay and fight the invaders like brave warrior",
+          "choiceText": "Stay and fight the invaders like a brave warrior",
           "text": "You wait around for two hours. The invaders come and kill everyone.",
           "choices": []
         }
