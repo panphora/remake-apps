@@ -40,6 +40,6 @@
     "concurrently": "^4.1.0",
     "livereload": "^0.8.0",
     "nodemon": "^1.19.1",
-    "parcel": "^1.12.3"
+    "parcel": "^2.8.2"
   }
 }
